@@ -1,0 +1,12 @@
+{
+  "name": "serverless-swaggerui",
+  "version": "1.0.0",
+  "description": "Serverless plugin that serves SwaggerUI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["serverless", "plugin", "swagger", "swaggerui"],
+  "author": "",
+  "license": "MIT"
+}
