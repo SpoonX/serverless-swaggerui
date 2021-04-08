@@ -2,7 +2,7 @@ const http = require('http');
 const { template } = require('./template');
 
 class ServerlessSwagger {
-  static buildTemplate(url, accessToken, version) {
+  static buildTemplate(url, accessToken, version = '3.46.0') {
     return template({ url, accessToken, version });
   }
 
@@ -13,7 +13,7 @@ class ServerlessSwagger {
         url,
         path = '/local/swagger',
         accessToken,
-        version = '3.46.0'
+        version,
       } = serverless.service.custom?.swagger ?? {};
 
       const server = http.createServer((req, res) => {
